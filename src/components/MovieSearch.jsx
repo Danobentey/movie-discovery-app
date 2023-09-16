@@ -1,5 +1,4 @@
 import React from 'react';
-import { InputGroup, Input, Button } from 'reactstrap';
 
 const MovieSearch = () => {
   // Define state variables for search query, search results, and loading state
@@ -9,10 +8,7 @@ const MovieSearch = () => {
 
   return (
     <div>
-      <InputGroup>
-        <Input /> 
-        <Button className='btn btn-primary' >S</Button>
-      </InputGroup>
+      {}
     </div>
   )
 }
