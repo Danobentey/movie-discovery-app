@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchPopularMovies } from '../apiUtils/api';
 import MovieCard from './MovieCard';
-import { Container, Row } from 'reactstrap';
+import { Container } from 'reactstrap';
 
 function MovieList() {
 
