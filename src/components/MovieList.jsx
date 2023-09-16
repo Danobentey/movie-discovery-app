@@ -18,6 +18,9 @@ function MovieList() {
     
     return (
         <Container className="mt-6 d-flex flex-wrap" fluid>
+            <Container>
+                <h2>Featured Movies</h2>
+            </Container>
             <>
             {!!movies && (
                 movies.map((movie) => (

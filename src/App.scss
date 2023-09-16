@@ -1,0 +1,23 @@
+.poster {
+  background-image: url('https://image.tmdb.org/t/p/original/bOGkgRGdhrBYJSLpXaxhXVstddV.jpg');
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  background-size: auto;
+
+  .search_input, .search_input:focus {
+    background-color: transparent;
+    color: whitesmoke;
+    border-right: none;
+  }
+  .search_input + button {
+    border-left: none;
+    border-color: white;
+  }
+}
+
+
+.main {
+  margin-top: 30px;
+}
