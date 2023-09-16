@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { fetchPopularMovies } from '../apiUtils/api';
+import MovieCard from './MovieCard';
+import { Container, Row } from 'reactstrap';
 
 function MovieList() {
-    // Your code to display a list of movies goes here
+
+    const [movies, setMovies] = useState([]);
+
+    useEffect(() => {
+        fetchPopularMovies()
+            .then((data) => {
+                setMovies(data);
+            })
+            .catch(err => console.error('error fetching popular movies:' + err))
+    },[])
+
+    
     return (
-        <div>
-            {/* Render a list of movie cards here */}
-        </div>
+        <Container className="mt-6 d-flex flex-wrap" fluid>
+            <>
+            {!!movies && (
+                movies.map((movie) => (
+                    <MovieCard movie={movie} />
+                    ))
+                    )}
+            </>
+            
+        </Container>
     );
 }
 

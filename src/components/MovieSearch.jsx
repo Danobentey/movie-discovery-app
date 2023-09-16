@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { InputGroup, Input, Button } from 'reactstrap';
 
 const MovieSearch = () => {
   // Define state variables for search query, search results, and loading state
-  const [query, setQuery] = useState('');
-  const [results, setResults] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  // const [query, setQuery] = useState('');
+  // const [results, setResults] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
 
   return (
     <div>
