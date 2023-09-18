@@ -1,14 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const MovieCard = ({ movie }) => {
 
   const { title, releaseDate, posterURL } = movie;
 
   return (
-    <div className=''>
-      <img src={`https://image.tmdb.org/t/p/w154${posterURL}`} alt={title} data-testid="movie-poster" />
+    <div className='movie_card' onClick={() => {}}>
+      <img src={`https://image.tmdb.org/t/p/w185${posterURL}`} alt={title} data-testid="movie-poster" />
       <h3 data-testid="movie-title">{title}</h3>
-      <p data-testid="movie-release-date">Realease Date: {releaseDate}</p>      
+      <p data-testid="movie-release-date">Relesae: {releaseDate}</p>      
     </div>
   )
 }

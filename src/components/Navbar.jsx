@@ -8,18 +8,18 @@ const Navbar = () => {
   return (
     <div>
       <div className="navbar mt-6 d-flex justify-space-between">
-        <div>
+        <div className='d-block'>
         <img src={Logo} alt="tv" />
         </div>
                
         <InputGroup className='w-50'>
           <Input className='search_input' placeholder="What do you want to watch?" />
           <Button outline color='secondary' className="bg-none">
-            <img src={SearchButton} alt="search"  />
+            <img src={SearchButton} alt="search" />
           </Button>
         </InputGroup>
 
-        <div className='d-flex'>
+        <div className='d-block'>
           <img src={Menu} alt="menu" height={"50px"} />
         </div>
       </div>

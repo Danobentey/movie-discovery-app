@@ -10,14 +10,26 @@
     background-color: transparent;
     color: whitesmoke;
     border-right: none;
+    box-shadow: none;
+    border-color: white;
   }
   .search_input + button {
     border-left: none;
     border-color: white;
+    background-color: none;
   }
 }
 
-
 .main {
   margin-top: 30px;
+  
+  .movie_card {
+    margin: 5px;
+    width: 200px;
+    text-align: center;
+
+    h3 {
+      font-size: 18px;
+    }
+  }
 }
